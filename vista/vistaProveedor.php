@@ -24,6 +24,10 @@ else $varSesion=$_SESSION['almacenero'];
             border-bottom: 4px solid #fff !important;
             padding-bottom: 0.5px;
         }
+        .header{
+            background-color: #D29BFD !important;
+            z-index: 100;
+        }
     </style>
 </head>
 <body>

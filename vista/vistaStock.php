@@ -29,8 +29,10 @@ else $varSesion=$_SESSION['almacenero'];
 
         h1{
             text-align: center;
-
-
+        }
+        .header{
+            background-color: #D29BFD !important;
+            z-index: 100;
         }
 
     </style>
