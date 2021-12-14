@@ -1,14 +1,12 @@
 <?php
     require_once("../Modelo/modeloUsuario.php");
+    require_once("conexion.php");
     class controlUsuario
     {
         private $conexion;
         public function __construct()
         {            
-            $this->conexion= new PDO("mysql:host=localhost;dbname=BdFarmaciaAzul;port=3306","root", "",
-                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES => false,]);
+            $this->conexion = new Conexion();
         }
        
         public function consultarUsuario($user,$pass)

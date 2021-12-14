@@ -63,10 +63,7 @@
         /************************************************ */
         public function verStock($conexion)
         {
-            $resultado=$conexion->prepare("SELECT m.IdMedic,m.NombreMedic,m.TipoMedic,m.Marca,SUM(E.Cantidad) - IFNULL(SUM(S.Cantidad), 0) as stock,m.Descripcion  
-            FROM tmedicamento m LEFT JOIN Tdetalleingreso E ON 
-            m.IdMedic = E.IdMedic LEFT JOIN Tdetallesalida S ON 
-            m.IdMedic = S.IdMedic GROUP BY E.IdMedic;");
+            $resultado=$conexion->prepare("CALL Consultar_Stock();");
             $resultado->execute();
             $listMedic=$resultado->fetchAll(PDO::FETCH_ASSOC);
             return $listMedic;

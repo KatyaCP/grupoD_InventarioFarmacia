@@ -1,15 +1,13 @@
 <?php
     require_once("../Modelo/modeloMedic.php");
+    require_once("conexion.php");
     class controlMedic
     {
         private $conexion;
         private $newMedic;
         public function __construct()
         {            
-            $this->conexion= new PDO("mysql:host=localhost;dbname=BdFarmaciaAzul;port=3306","root", "",
-                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES => false,]);
+            $this->conexion = new Conexion();
             $this->newMedic=new modeloMedicamento($nombre=null,$tipo=null,$descrip=null,$Marca=null);
         }
        

@@ -18,17 +18,22 @@ else $varSesion=$_SESSION['almacenero'];
     <style>
         #tabla{
             max-width: 1400px;
-            margin-left: 50px;
+            margin-left: auto;
             margin-right: auto;
+            display: flex;
         }
         .div5,.div6{
             border-bottom: 4px solid #fff !important;
             padding-bottom: 0.5px;
         }
+        h1{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <br><br><br><br>
+    <h1><br><br>Vista Salida de Medicamentos</h1>
+    <br>
     <div  id="tabla">
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">
