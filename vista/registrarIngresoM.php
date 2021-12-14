@@ -1,4 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION['almacenero']))
+{
+    header("location:inicioSesion.php");
+    die();
+}
+else $varSesion=$_SESSION['almacenero'];
 
+?>
 <!DOCTYPE html>
 <html>
 <head>

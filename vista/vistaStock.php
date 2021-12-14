@@ -11,7 +11,7 @@ else $varSesion=$_SESSION['almacenero'];
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Vista Medicamentos</title>
+    <title>Vista Stock</title>
     <?php
     require('plantillaMenu.php');
     ?>
@@ -28,6 +28,7 @@ else $varSesion=$_SESSION['almacenero'];
     </style>
 </head>
 <body>
+    <h1>Vista Stock Medicamento</h1>
     <br><br><br><br>
     <div  id="tabla">
     <table class="table table-dark table-striped m-4">
@@ -36,9 +37,9 @@ else $varSesion=$_SESSION['almacenero'];
     <th>Cod Medicamento</th>
     <th>Nombre Medicamento</th>
     <th>Tipo Medicamento</th>
-    <th>Descripcion</th>
     <th>Marca</th>
-    <th>ACCION</th>
+    <th>Stock</th>
+    <th>Descripcion</th>
     </tr>
     </thead>
     <tbody class="text-center">
@@ -46,19 +47,12 @@ else $varSesion=$_SESSION['almacenero'];
        require('../controlador/controladorMedic.php');
 
        $control = new controlMedic();
-       $datosIn=$control->listarMedicamento();
+       $datosIn=$control->listarStock();
        echo $datosIn;
         ?>
     </tbody>
     </table>
     </div>
-    <script>
-        function confirmar(id){
-            let respuesta=confirm('¿Estas seguro que deseas eliminar?');
-            if(respuesta==true){
-                return true;
-            }else return false;
-        }
-    </script>
+    
 </body>
 </html>

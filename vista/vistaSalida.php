@@ -11,7 +11,7 @@ else $varSesion=$_SESSION['almacenero'];
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Vista Medicamentos</title>
+    <title>Vista Salida</title>
     <?php
     require('plantillaMenu.php');
     ?>
@@ -33,20 +33,24 @@ else $varSesion=$_SESSION['almacenero'];
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">
     <tr>
-    <th>Cod Medicamento</th>
-    <th>Nombre Medicamento</th>
-    <th>Tipo Medicamento</th>
-    <th>Descripcion</th>
-    <th>Marca</th>
+    <th>Cod Salida</th>
+    <th>Cod Trabajador Almacen</th>
+    <th>Cod Trabajador Entrega</th>
+    <th>Nro. Lote </th>
+    <th>Fecha Salida</th>
+    <th>Estado</th>
+    <th>Motivo Salida</th>
+    <th>Cod Medic</th>
+    <th>Cantidad</th>
     <th>ACCION</th>
     </tr>
     </thead>
     <tbody class="text-center">
         <?php
-       require('../controlador/controladorMedic.php');
+       require('../controlador/controladorSalida.php');
 
-       $control = new controlMedic();
-       $datosIn=$control->listarMedicamento();
+       $control = new controlSalida();
+       $datosIn=$control->listarSalida();
        echo $datosIn;
         ?>
     </tbody>

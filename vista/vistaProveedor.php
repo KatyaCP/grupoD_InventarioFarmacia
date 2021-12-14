@@ -11,17 +11,16 @@ else $varSesion=$_SESSION['almacenero'];
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Vista Medicamentos</title>
+    <title>Vista Proveedor</title>
     <?php
     require('plantillaMenu.php');
     ?>
     <style>
         #tabla{
-            max-width: 1400px;
-            margin-left: 50px;
+            margin-left: auto;
             margin-right: auto;
         }
-        .div5,.div6{
+        .div2,.div3{
             border-bottom: 4px solid #fff !important;
             padding-bottom: 0.5px;
         }
@@ -29,25 +28,25 @@ else $varSesion=$_SESSION['almacenero'];
 </head>
 <body>
     <br><br><br><br>
-    <div  id="tabla">
+    <div class="col-md-9" id="tabla">
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">
     <tr>
-    <th>Cod Medicamento</th>
-    <th>Nombre Medicamento</th>
-    <th>Tipo Medicamento</th>
-    <th>Descripcion</th>
-    <th>Marca</th>
+    <th>Codigo Proveedor</th>
+    <th>Razon Social</th>
+    <th>RUC</th>
+    <th>Nro. Celular </th>
+    <th>Correo Electronico</th>
     <th>ACCION</th>
     </tr>
     </thead>
     <tbody class="text-center">
         <?php
-       require('../controlador/controladorMedic.php');
+       require('../controlador/controladorProveedor.php');
 
-       $control = new controlMedic();
-       $datosIn=$control->listarMedicamento();
-       echo $datosIn;
+       $control = new controlProveedor();
+       $datosProv=$control->listarProveedor();
+       echo $datosProv;
         ?>
     </tbody>
     </table>

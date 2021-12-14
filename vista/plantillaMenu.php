@@ -89,16 +89,16 @@
                 <li>
                     <a href="#"><div class="div2">Proveedor </div></a>
                     <ul>
-                        <li><a href="#"><div class="div3">Consultar</div></a></li>
+                        <li><a href="vistaProveedor.php"><div class="div3">Consultar</div></a></li>
                         <li><a href="registrarProveedor.php"><div class="div4">Registrar</div></a></li>                      
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><div class="div5">Ver Medicamento</div></a>
+                    <a href="vistaMedic.php"><div class="div5">Ver Medicamento</div></a>
                     <ul>
-                        <li><a href="#"><div class="div6">Ingreso</div></a></li>
-                        <li><a href="#"><div class="div7">Salida</div></a></li>
-                        <li><a href="#"><div class="div8">Generico</div></a></li>                      
+                        <li><a href="vistaIngreso.php"><div class="div6">Ingreso</div></a></li>
+                        <li><a href="vistaSalida.php"><div class="div7">Salida</div></a></li> 
+                        <li><a href="vistaStock.php"><div class="div8">Stock</div></a></li>                   
                     </ul>
                 </li>
                 <li>
@@ -108,7 +108,7 @@
                         <li><a href="registrarSalidaM"><div class="div11">Salida</div></a></li>                    
                     </ul>
                 </li>
-                <li><a href="#"><div class="div12">Cerrar Sesión</div></a></li>
+                <li><a href="cerrarSecion"><div class="div12">Cerrar Sesión</div></a></li>
             </ul> 
             </nav>
         </div>

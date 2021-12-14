@@ -33,20 +33,25 @@ else $varSesion=$_SESSION['almacenero'];
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">
     <tr>
-    <th>Cod Medicamento</th>
-    <th>Nombre Medicamento</th>
-    <th>Tipo Medicamento</th>
-    <th>Descripcion</th>
-    <th>Marca</th>
+    <th>Cod Ingreso</th>
+    <th>Cod Trabajador</th>
+    <th>Cod Proveedor</th>
+    <th>Nro. Lote </th>
+    <th>Fecha Vencimiento</th>
+    <th>Fecha Ingreso</th>
+    <th>Estado</th>
+    <th>Motivo Ingreso</th>
+    <th>Cantidad</th>
+    <th>Cod Medic</th>
     <th>ACCION</th>
     </tr>
     </thead>
     <tbody class="text-center">
         <?php
-       require('../controlador/controladorMedic.php');
+       require('../controlador/controladorIngreso.php');
 
-       $control = new controlMedic();
-       $datosIn=$control->listarMedicamento();
+       $control = new controlIngreso();
+       $datosIn=$control->listarIngres();
        echo $datosIn;
         ?>
     </tbody>

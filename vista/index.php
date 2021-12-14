@@ -1,11 +1,19 @@
 <?php
-require('plantillaMenu.php');
+session_start();
+if(!isset($_SESSION['almacenero']))
+{
+    header("location:inicioSesion.php");
+    die();
+}
+else $varSesion=$_SESSION['almacenero'];
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Inico</title>
+    <?php require('plantillaMenu.php'); ?>
     <style>
     body{
         background-image:url('fondo2.png');
@@ -24,7 +32,12 @@ require('plantillaMenu.php');
         }
     </style>
 </head>
-<body>
+<body onload="saludar();">
+<script>
+    function saludar(){
+        alert('<?php echo "Bienvenido ".$varSesion ?>')
+    }
+</script>
     
 </body>
 </html>
