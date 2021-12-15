@@ -101,7 +101,7 @@
             <input class="form-control" type="text" name="fechaIngreso" value="<?php echo $prepararIng['FechaIngreso'] ?>">
             </div>
             <div class="mb-3">
-            <label class="form-label" for="">Estado</label>
+            <label class="form-label" for="">Observacion</label>
             <input class="form-control" type="text" name="estado" value="<?php echo $prepararIng['Estado'] ?>">
             </div>
             <div class="mb-3" id="selectmotivo">

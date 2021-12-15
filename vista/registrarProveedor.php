@@ -1,4 +1,5 @@
 <?php
+// si no
 session_start();
 if(!isset($_SESSION['almacenero']))
 {

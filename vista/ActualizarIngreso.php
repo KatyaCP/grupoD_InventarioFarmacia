@@ -43,7 +43,7 @@ if(isset($_POST["idmedic"]) && isset($_POST["idprov"])&& isset($_POST["idtrabaj"
             color: rgb(181, 10, 187);
             font-family: 'Times New Roman', Times, serif;
         }
-        .div2,.div3{
+        .div5,.div6{
             border-bottom: 4px solid #fff !important;
             padding-bottom: 0.5px;
         }

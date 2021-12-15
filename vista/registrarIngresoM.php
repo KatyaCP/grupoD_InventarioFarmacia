@@ -94,9 +94,9 @@ else $varSesion=$_SESSION['almacenero'];
 <div class="mb-3">
 <label class="form-label" for="">Motivo del Ingreso</label>
 <select class="form-select" name="motivoI"  onchange="convertir(this)" id="motivoI">
-    <option value="Compra">Por Compra</option>
-    <option value="Garantia">Por Garantia</option>
-    <option value="Otro">Otros</option>
+    <option value="Compra">Compra</option>
+    <option value="Devolucion">Devolucion</option>
+    <option value="Otro">Otro</option>
 </select>
 <div class="mb-3" id="selectmotivo">
 <label class="form-label" for="">Especifique el motivo</label>
