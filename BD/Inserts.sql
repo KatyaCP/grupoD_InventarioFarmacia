@@ -1,4 +1,4 @@
-use bdfarmaciaAzul;
+use BdEconofarm;
 insert into Tproveedor (RazonSocial,RUC,Celular,Email) values ("BSfarm","20745812475",924814753,"@gmail.com");
 insert into Tproveedor (RazonSocial,RUC,Celular,Email) values ("Maxin Farma Asociados ","20745512475",933814753,"@gmail.com");
 insert into Tproveedor (RazonSocial,RUC,Celular,Email) values ("GAG Logistics & Purchasing","20745952475",900814753,"@gmail.com");

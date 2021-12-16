@@ -86,6 +86,7 @@ else $varSesion=$_SESSION['almacenero'];
     </form>
 </div>
 <script>
+    
     function convertir(nombreInput)
         {
             if(nombreInput.value=="Otro")

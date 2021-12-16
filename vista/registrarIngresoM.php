@@ -154,6 +154,7 @@ if(isset($_POST["idmedic"]) && isset($_POST["idprov"])&& isset($_POST["idtrabaj"
     $motivo= $_POST["motivoI"];
     $idMedic= $_POST["idmedic"];
     $cant= $_POST["cantidad"];
+    
     $control->registrarNuevoIngreso($idIng,$idtraj,$idProv,$Nrolote,$fechaVen,$fechaIn,$estado,$motivo,$idMedic,$cant);
     
 }

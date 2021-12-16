@@ -47,7 +47,7 @@ else $varSesion=$_SESSION['almacenero'];
     <th>Cod Trabajador Entrega</th>
     <th>Nro. Lote </th>
     <th>Fecha Salida</th>
-    <th>Estado</th>
+    <th>R.S</th>
     <th>Motivo Salida</th>
     <th>Cod Medic</th>
     <th>Cantidad</th>

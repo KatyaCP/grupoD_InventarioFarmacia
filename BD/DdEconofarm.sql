@@ -1,6 +1,6 @@
-/*drop database BdFarmaciaAzul;*/
-create database BdFarmaciaAzul;
-use BdFarmaciaAzul;
+/*drop database BdEconofarm;*/
+create database BdEconofarm;
+use BdEconofarm;
 /*-----------------------------------------*/
 create table Tmedicamento(
 IdMedic int auto_increment not null,

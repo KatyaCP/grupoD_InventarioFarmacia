@@ -1,16 +1,20 @@
 <?php
 session_start();
+
 if(!isset($_SESSION['almacenero']))
 {
     header("location:inicioSesion.php");
     die();
 }
+
 else $varSesion=$_SESSION['almacenero'];
 require('../controlador/controladorIngreso.php');
 
 $control = new controlIngreso();
+
 if(isset($_POST["idmedic"]) && isset($_POST["idprov"])&& isset($_POST["idtrabaj"])&& isset($_POST["idingreso"])&&isset($_POST["NroLote"]) && isset($_POST["fechaVencimiento"])&& isset($_POST["fechaIngreso"])&& isset($_POST["estado"])&& isset($_POST["motivoI"])&& isset($_POST["cantidad"]))
 {
+
     $idIng = $_POST["idingreso"];
     $idtraj = $_POST["idtrabaj"];
     $idProv = $_POST["idprov"];
@@ -21,6 +25,7 @@ if(isset($_POST["idmedic"]) && isset($_POST["idprov"])&& isset($_POST["idtrabaj"
     $motivo= $_POST["motivoI"];
     $idMedic= $_POST["idmedic"];
     $cant= $_POST["cantidad"];
+    //
     $control->ActualizarIngreso($idIng,$idtraj,$idProv,$Nrolote,$fechaVen,$fechaIn,$estado,$motivo,$idMedic,$cant);
     
 }
@@ -70,6 +75,7 @@ if(isset($_POST["idmedic"]) && isset($_POST["idprov"])&& isset($_POST["idtrabaj"
     <br>
     <h1>ACTUALIZAR INGRESO</h1>
     <?php
+    //
     $control->datosActualizarIng();
     ?>
 </div>

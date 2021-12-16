@@ -12,7 +12,8 @@
             $this->RUC=$ruc;
             $this->Celular=$cel;
             $this->Email=$mail;
-        }      
+        }  
+        //
         public function registraProve($conexion)
         {
             $sentencia = $conexion->prepare("INSERT INTO Tproveedor(RazonSocial,RUC,Celular,Email) VALUES (?,?,?,?)");
@@ -25,6 +26,7 @@
             }
             else return "problemas en el registro";
         }
+        //
         public function verProveedor($conexion)
         {
             $resultado=$conexion->prepare("SELECT * FROM Tproveedor");

@@ -4,7 +4,7 @@
     require_once("conexion.php");
     class controlIngreso
     {
-        //private $conexion;
+        
         private $newIngre;
         private $newDetIng;
         public function __construct()
@@ -101,7 +101,7 @@
             <input class="form-control" type="text" name="fechaIngreso" value="<?php echo $prepararIng['FechaIngreso'] ?>">
             </div>
             <div class="mb-3">
-            <label class="form-label" for="">Observacion</label>
+            <label class="form-label" for="">R.S</label>
             <input class="form-control" type="text" name="estado" value="<?php echo $prepararIng['Estado'] ?>">
             </div>
             <div class="mb-3" id="selectmotivo">

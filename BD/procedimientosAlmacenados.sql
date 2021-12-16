@@ -1,4 +1,4 @@
-use bd;
+use BdEconofarm;
 DELIMITER //
 CREATE PROCEDURE Eliminar_Medicamento(
 IN _IdMedic int

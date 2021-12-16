@@ -1,11 +1,11 @@
 <?php
-// si no
 session_start();
 if(!isset($_SESSION['almacenero']))
 {
     header("location:inicioSesion.php");
     die();
 }
+
 else $varSesion=$_SESSION['almacenero'];
 
 ?>
@@ -14,6 +14,7 @@ else $varSesion=$_SESSION['almacenero'];
 <head>
     <meta charset="UTF-8">
     <title>Registrar Proveedor</title>
+    
     <?php
     require('plantillaMenu.php');
     ?>
@@ -52,6 +53,7 @@ else $varSesion=$_SESSION['almacenero'];
     <br>
     <br>
     <h1>REGISTRAR PROVEEDOR</h1>
+    <br><br>
     <form action="#" method="post">
     <div class="mb-3">
     <label class="form-label" for="">Razon Social:</label>
@@ -76,16 +78,20 @@ else $varSesion=$_SESSION['almacenero'];
 </div>
 </body>
 </html>
+
 <?php
 require('../controlador/controladorProveedor.php');
 
 $control = new controlProveedor();
+
+
 if(isset($_POST["razonSocial"]) && isset($_POST["ruc"])&& isset($_POST["celular"])&& isset($_POST["email"]))
 {
     $razonS = $_POST["razonSocial"];
     $ruc = $_POST["ruc"];
     $cel = $_POST["celular"];
     $mail = $_POST["email"];
+    
     $control->registrarNuevoProveedor($razonS,$ruc,$cel,$mail);
     
 }

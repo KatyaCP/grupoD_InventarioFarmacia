@@ -3,6 +3,7 @@
     require_once("conexion.php");
     class controlProveedor
     {
+        
         private $conexion;
         private $newProv;
         public function __construct()
@@ -13,8 +14,9 @@
         
         public function registrarNuevoProveedor($razonS,$ruc,$cel,$mail)
         {
-            $nuevoProveedor = new modeloProveedor($razonS,$ruc,$cel,$mail);            
-            return $nuevoProveedor->registraProve($this->conexion);    
+            $nuevoProveedor = new modeloProveedor($razonS,$ruc,$cel,$mail); 
+                    
+            $nuevoProveedor->registraProve($this->conexion);    
         }
        
         public function listarProveedor(){
@@ -39,12 +41,16 @@
         }
         public function eliminarProveedor($idProveedor)
         {
+            //
             $deleteProv = $this->newProv->deleteProv($this->conexion,$idProveedor);
             if($deleteProv==1)
             {
                 header('Location:../vista/vistaProveedor.php');
             }
-            else echo"<script>alert('Error al momento de eliminar, intentelo de nuevo')</script>";
+            else {echo"<script>alert('Error al momento de eliminar, intentelo de nuevo')</script>";
+                //header('Location:../vista/vistaProveedor.php');
+            }
+
         }
         public function prepararActualizacionProveedor($idProveedor)
         {

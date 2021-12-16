@@ -33,7 +33,7 @@
             $sentencia->bindParam(7,$this->Estado);
             $sentencia->bindParam(8,$this->motivoIngreso);
             if($sentencia->execute()){
-                return "Registrado correctamente";
+                return "Registrado correctamente"; 
             }
             else return "problemas en el registro";
         }
