@@ -1,0 +1,123 @@
+body{
+    background-image: url("fondo2.png");
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+body:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    
+}
+.contenedor_div{
+  
+    position: relative;
+	margin: 10% auto 0;
+	width: 320px;
+	height: 450px;
+    background:linear-gradient(90deg, #000, #181717);
+    border-radius: 10px;
+    
+}
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+    border-radius: 10px;
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;/*cero por ciento en en eje x y 200 por ciento en el eje Y*/
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);/*es como darle brillo*/
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));/*añade efectos de sombra alrededor del marco de un elemento. desplazamientos en X e Y, los radios de desenfoque y dispersión, y el color relativos al elemento.*/
+	filter: blur(15px);/*aplica undesenfoque Gaussiano*/
+}
+
+
+
+h1{
+    text-align: center;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35;
+}
+
+p{
+    position: relative;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-left: 10px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+label{
+    margin: auto;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+}
+input{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btnIngresar{
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    width: 285px;
+    margin: auto;
+    top: 80%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgb(158, 56, 179);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    transition-duration: 0.8s;
+    text-align: center;
+    
+}
+.btnIngresar:hover{
+
+    background: black;
+    transform: scale(1.1);
+}
+footer{
+    color: white;       
+    position: absolute;
+    bottom: 5px;
+    width: 99%;
+    margin:auto;
+    text-align: center;
+   
+}

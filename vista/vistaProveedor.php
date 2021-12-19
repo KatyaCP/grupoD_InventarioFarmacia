@@ -16,6 +16,9 @@ else $varSesion=$_SESSION['almacenero'];
     require('plantillaMenu.php');
     ?>
     <style>
+         body{
+            background-image:url('fondo2.png');
+        }
         #tabla{
             margin-left: auto;
             margin-right: auto;
@@ -28,10 +31,14 @@ else $varSesion=$_SESSION['almacenero'];
             background-color: #D29BFD !important;
             z-index: 100;
         }
+        h1{
+            text-align: center;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <br><br><br><br>
+    <br><br><h1>Vista Proveedor</h1>
     <div class="col-md-9" id="tabla">
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">

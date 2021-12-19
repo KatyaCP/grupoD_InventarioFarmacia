@@ -16,6 +16,17 @@ else $varSesion=$_SESSION['almacenero'];
     require('plantillaMenu.php');
     ?>
     <style>
+        body{
+            background-image:url('fondo2.png');
+        }
+        
+        /*body:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 31, 100,0.2);;
+            position: absolute;
+        }*/
         #tabla{
             max-width: 1400px;
             display: flex;
@@ -29,6 +40,7 @@ else $varSesion=$_SESSION['almacenero'];
 
         h1{
             text-align: center;
+            color: #fff;
         }
         .header{
             background-color: #D29BFD !important;
