@@ -88,7 +88,7 @@ else $varSesion=$_SESSION['almacenero'];
 <input class="form-control" type="time" name="horaIngreso" value="">
 </div>
 <div class="mb-3">
-<label class="form-label" for="">Estado</label>
+<label class="form-label" for="">R.S</label>
 <input class="form-control" type="text" name="estado" value="">
 </div>
 <div class="mb-3">

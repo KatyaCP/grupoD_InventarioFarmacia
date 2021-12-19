@@ -22,7 +22,7 @@ else $varSesion=$_SESSION['almacenero'];
             margin-right: auto;
             display: flex;
         }
-        .div5,.div6{
+        .div5,.div7{
             border-bottom: 4px solid #fff !important;
             padding-bottom: 0.5px;
         }
