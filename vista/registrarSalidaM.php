@@ -87,7 +87,7 @@ else $varSesion=$_SESSION['almacenero'];
 <input class="form-control" type="text" name="estado" value="">
 </div>
 <div class="mb-3">
-<label class="form-label" for="">Motivo de la Salida</label>
+<label class="form-label" for="">Motivo de salida</label>
 <select class="form-select" name="motivoS"  onchange="convertir(this)" id="motivoS">
     <option value="solicitud">Por solicitud de un trabajador</option>
     <option value="Devolucion">Por devolucion</option>

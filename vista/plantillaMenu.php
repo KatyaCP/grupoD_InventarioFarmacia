@@ -89,20 +89,20 @@
                 <li>
                     <a href="#"><div class="div2">Proveedor </div></a>
                     <ul>
-                        <li><a href="vistaProveedor.php"><div class="div3">Consultar</div></a></li>
+                        <li><a href="vistaProveedor.php"><div class="div3">Ver proveedores</div></a></li>
                         <li><a href="registrarProveedor.php"><div class="div4">Registrar</div></a></li>                      
                     </ul>
                 </li>
                 <li>
-                    <a href="vistaMedic.php"><div class="div5">Ver Medicamento</div></a>
+                    <a href="vistaMedic.php"><div class="div5">Medicamentos</div></a>
                     <ul>
-                        <li><a href="vistaIngreso.php"><div class="div6">Ingreso</div></a></li>
-                        <li><a href="vistaSalida.php"><div class="div7">Salida</div></a></li> 
-                        <li><a href="vistaStock.php"><div class="div8">Stock</div></a></li>                   
+                        <li><a href="vistaIngreso.php"><div class="div6">Ver ingresos</div></a></li>
+                        <li><a href="vistaSalida.php"><div class="div7">Ver salidas</div></a></li> 
+                        <li><a href="vistaStock.php"><div class="div8">Ver Stock</div></a></li>                   
                     </ul>
                 </li>
                 <li>
-                    <a href="registrarMedic"><div class="div9">Registrar Medicamento</div></a>
+                    <a href="registrarMedic"><div class="div9">Nuevo registro</div></a>
                     <ul>
                         <li><a href="registrarIngresoM.php"><div class="div10">Ingreso</div></a></li>
                         <li><a href="registrarSalidaM"><div class="div11">Salida</div></a></li>                    

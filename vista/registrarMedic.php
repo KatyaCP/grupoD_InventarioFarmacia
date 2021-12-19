@@ -56,7 +56,7 @@ else $varSesion=$_SESSION['almacenero'];
     <h1>REGISTRAR MEDICAMENTO</h1>
     <form action="#" method="post">
     <div class="mb-3">
-    <label class="form-label" for="">Nombre Medicamento:</label>
+    <label class="form-label" for="">Nombre Medicamento</label>
     <input class="form-control" type="text" name="medicamento" value="">
     </div>
     <div class="mb-3">
