@@ -8,14 +8,14 @@
 <body>
     <div class="contenedor_div animate-bg">
         <form action="inicioSesion.php" method="POST">
-            <br>
-        <h1>BIENVENIDO</h1><br>
+        <div class="foundation"><br><img src="Foundation.png" width="100"></div>
+        <h1>ECONOFARM</h1><br>
         <label class="label">Usuario:</label><br>
         <p><input type="text" placeholder="Escriba Nombre de Usuario" name="user"></p>
-        <br><br><br>
+        <br>
         <label class="label">Contraseña:</label><br>
         <p><input type="password" placeholder="Escriba su Contraseña" name="pass"></p>
-        <br><br>
+        <br>
         <input class="btnIngresar" type="submit" value="INGRESAR">
         </form>
     </div>    

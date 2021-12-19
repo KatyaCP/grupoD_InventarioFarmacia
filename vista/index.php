@@ -41,7 +41,7 @@ else
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #fff;
+        background-color: black;/* */
         top: 3px;
         height: 300px;
         border-radius: 20px;
@@ -116,7 +116,8 @@ else
 <div class="mensaje" id="mensaj">
     <div class="image"><img src="iconUser.png"  width="350px"></div>
     <div class="sms">
-        <label class="bienvenida"><b>Bienvenido:</b> </label><br>
+        <!--Bienvenida-->
+        <label class="bienvenida"><b>Bienvenido</b> </label><br>
         <label class="user"><?php echo $varSesion ?></label><br>
         <button class="BTNaceptar" onclick="cerrarMensaje()">ACEPTAR</button>
     </div>

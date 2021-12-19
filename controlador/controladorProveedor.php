@@ -39,10 +39,9 @@
             }         
             return $newtwmp;  
         }
-        public function eliminarProveedor($idProveedor)
-        {
-            //
+        public function eliminarProveedor($idProveedor){
             $deleteProv = $this->newProv->deleteProv($this->conexion,$idProveedor);
+
             if($deleteProv==1)
             {
                 header('Location:../vista/vistaProveedor.php');
