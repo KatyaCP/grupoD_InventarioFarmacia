@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="estiloLoginS.css">
+    <link rel="stylesheet" href="estiloLogin.css">
 </head>
 <body>
-    <div class="contenedor_div">
+    <div class="contenedor_div animate-bg">
         <form action="inicioSesion.php" method="POST">
-        <h1>BIENVENIDO</h1>
-        <p>Usuario:<br><input type="text" placeholder="Escriba Nombre de Usuario" name="user"></p>
-        <br>
-        <p>Contraseña:<br><input type="password" placeholder="Escriba su Contraseña" name="pass"></p>
+            <br>
+        <h1>BIENVENIDO</h1><br>
+        <label class="label">Usuario:</label><br>
+        <p><input type="text" placeholder="Escriba Nombre de Usuario" name="user"></p>
+        <br><br><br>
+        <label class="label">Contraseña:</label><br>
+        <p><input type="password" placeholder="Escriba su Contraseña" name="pass"></p>
         <br><br>
         <input class="btnIngresar" type="submit" value="INGRESAR">
         </form>
