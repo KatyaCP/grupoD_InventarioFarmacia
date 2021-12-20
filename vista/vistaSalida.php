@@ -17,7 +17,7 @@ else $varSesion=$_SESSION['almacenero'];
     ?>
     <style>
          body{
-            background-image:url('fondo2.png');
+            background-image:url('medi.jpg');
         }
         #tabla{
             max-width: 1400px;
@@ -31,7 +31,8 @@ else $varSesion=$_SESSION['almacenero'];
         }
         h1{
             text-align: center;
-            color: white;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
         }
         .header{
             background-color: #D29BFD !important;
@@ -40,8 +41,8 @@ else $varSesion=$_SESSION['almacenero'];
     </style>
 </head>
 <body>
-    <h1><br><br>Vista Salida de Medicamentos</h1>
-    <br>
+    <h1><br>Vista Salida de Medicamentos</h1>
+    
     <div  id="tabla">
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">
