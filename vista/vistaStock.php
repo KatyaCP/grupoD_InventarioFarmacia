@@ -17,7 +17,7 @@ else $varSesion=$_SESSION['almacenero'];
     ?>
     <style>
         body{
-            background-image:url('fondo2.png');
+            background-image:url('medi.jpg');
         }
         
         /*body:before{
@@ -40,7 +40,7 @@ else $varSesion=$_SESSION['almacenero'];
 
         h1{
             text-align: center;
-            color: #fff;
+            color: black;
         }
         .header{
             background-color: #D29BFD !important;
@@ -50,8 +50,8 @@ else $varSesion=$_SESSION['almacenero'];
     </style>
 </head>
 <body>
-    <h1><br><br>Vista Stock Medicamento</h1>
-    <br>
+    <h1><br>Vista Stock Medicamento</h1>
+    
     <div  id="tabla">
     <table class="table table-dark table-striped m-4">
     <thead class="text-center">
