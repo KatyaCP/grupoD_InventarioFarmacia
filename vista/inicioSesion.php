@@ -3,22 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="estiloLogin.css">
-    <style>
-        .gif{
-            position: fixed;
-            top: 100px;
-            left: 0px;
-        }
-        .gif2{
-            position: fixed;
-            top: 100px;
-            right: 0px;
-        }
-        
-    </style>
+    
+    <link href="estiloLogin.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
     <div class="contenedor_div animate-bg">
         <form action="inicioSesion.php" method="POST">
         <div class="foundation"><br><img src="Foundation.png" width="100"></div>
@@ -38,9 +27,7 @@
     <div class="gif2">
         <img src="and5.gif">
     </div> 
-</body>
-</html>
-<?php
+    <?php
 require('../controlador/controladorUsuario.php');
 
 $control = new controlUsuario();
@@ -51,9 +38,23 @@ if(isset($_POST["user"]) && isset($_POST["pass"]))
     $control->consultarUsuario($user,$pass);
     
 }
-/*echo"<footer>";
-echo "<h2>¡El usuario no existe!</h2>";
-echo"</footer>";*/
 ?>
+    <script>
+    function saludar(contar)
+    {       
+        if(contar==1)
+        {
+            document.getElementById('desHabilitar').style.display="block";
+        }
+    }
+    function cerrarMensaje()
+    {
+        document.getElementById('desHabilitar').style.display="none";
+    }
+</script>
+</body>
+</html>
+
+
 
 
