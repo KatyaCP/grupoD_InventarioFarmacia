@@ -20,8 +20,19 @@
                 header('Location:../vista');
             }
             else {
-                echo '¡El usuario no existe!';
-                echo"<script>alert('Usuario o Contraseña no validos')</script>";
+               /* echo '¡El usuario no existe!';
+                /*echo"<script>alert('Usuario o Contraseña no validos')</script>";*/
+                
+                echo '<div class="prin" id="desHabilitar">';
+                echo'<div class="mensaje" id="mensaj">';
+                 echo'<div class="image"><img src="iconLogin2.gif"  width="200px"></div>';
+                echo'<div class="sms">';
+                        
+                        echo'<div class="user">Error <br>Contraseña o Usuario Incorecto</div><br>';
+                        echo'<button class="BTNaceptar" onclick="cerrarMensaje()">ACEPTAR</button>';
+                    echo'</div>';
+                echo'</div>';
+                echo'</div>';
             }
         }
     }
