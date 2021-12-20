@@ -41,7 +41,7 @@ else
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: black;/* */
+        background-color: white;/* */
         top: 3px;
         height: 300px;
         border-radius: 20px;
