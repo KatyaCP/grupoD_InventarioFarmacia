@@ -20,7 +20,7 @@
                 header('Location:../vista');
             }
             else {
-                echo '¡El usuario no existe!';
+                /*echo '¡El usuario no existe!';*/
                 echo"<script>alert('Usuario o Contraseña no validos')</script>";
             }
         }

@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>LOGIN</title>
     <link rel="stylesheet" href="estiloLogin.css">
+    <style>
+        .gif{
+            position: fixed;
+            top: 100px;
+            left: 0px;
+        }
+        .gif2{
+            position: fixed;
+            top: 100px;
+            right: 0px;
+        }
+        
+    </style>
 </head>
 <body>
     <div class="contenedor_div animate-bg">
@@ -18,7 +31,13 @@
         <br>
         <input class="btnIngresar" type="submit" value="INGRESAR">
         </form>
-    </div>    
+    </div>  
+    <div class="gif">
+        <img src="and5.gif">
+    </div>  
+    <div class="gif2">
+        <img src="and5.gif">
+    </div> 
 </body>
 </html>
 <?php
